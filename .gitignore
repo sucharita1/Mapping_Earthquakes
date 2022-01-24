@@ -46,8 +46,7 @@
 # -----------------------------------------------------------------
 
 #ignore the config.js file
-*
-!*/config.js
+config.js
 
 # ignore all files starting with . or ~
 .*
