@@ -19,7 +19,7 @@ The final result of all the three challenges is:
 
 Here, you can see the base maps, street, satellite and dark in red which are radio buttons and only one option can be seen at one time. And the oveylay groups are checkboxes marked in green which can be seen together or in combination of one another.
 
-#### Add Tectonic Plate Data:
+### Tectonic Plate Data:
 ![only_tectonic_plates](https://github.com/sucharita1/Mapping_Earthquakes/blob/fec16154e7dc0c47b92a7ff558d78cc29c0dd968/Earthquake_Challenge/static/images/only_tectonic_plates.png?raw=true)
 * The tectonic plate data is added as a second layer group.
 * The tectonic plate data is added to the overlay object.
@@ -33,7 +33,7 @@ Here, you can see the base maps, street, satellite and dark in red which are rad
 Finally, The earthquake data and tectonic plate data displayed on the map when the page loads.
 ![with_earthquake_techtonicplate](https://github.com/sucharita1/Mapping_Earthquakes/blob/fec16154e7dc0c47b92a7ff558d78cc29c0dd968/Earthquake_Challenge/static/images/with_earthquake_techtonicplate.png?raw=true)
 
-#### Add Major Earthquake Data:
+### Major Earthquake Data:
 ![only_major_earthquake](https://github.com/sucharita1/Mapping_Earthquakes/blob/fec16154e7dc0c47b92a7ff558d78cc29c0dd968/Earthquake_Challenge/static/images/only_major_earthquake.png?raw=true)
 The major earthquake data is added as a third layer group.
 The major earthquake data is added to the overlay object.
@@ -46,7 +46,7 @@ The d3.json() callback is working and does the following:
 All the earthquake data and tectonic plate data are displayed on the map when the page loads and the datasets can be toggled on or off. In a satellite view
 ![satellite](https://github.com/sucharita1/Mapping_Earthquakes/blob/fec16154e7dc0c47b92a7ff558d78cc29c0dd968/Earthquake_Challenge/static/images/satellite.png?raw=true)
 
-#### Add an Additional Map:
+### Additional Map:
 * Using the options from the Mapbox styles (Links to an external site.), add a third map style as a tile layer object to the challenge_logic.js file.
 ![third_layer](https://github.com/sucharita1/Mapping_Earthquakes/blob/fec16154e7dc0c47b92a7ff558d78cc29c0dd968/Earthquake_Challenge/static/images/third_layer.png?raw=true)
 * Added the map variable to the base layer object.
