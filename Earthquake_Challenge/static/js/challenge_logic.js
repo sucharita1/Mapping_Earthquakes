@@ -15,6 +15,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 	accessToken: API_KEY
 });
 
+// Deliverable 3:
 // We create the third tile layer that will be the background of our map.
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -36,13 +37,13 @@ let baseMaps = {
   "Dark": dark
 };
 
-// 1. Add a 2nd layer group for the tectonic plate data.
+// 1. Add a layer group for the tectonic plate data and major earthquake data
 let allEarthquakes = new L.LayerGroup();
 let tectonicPlates = new L.LayerGroup();
 let majorEQ = new L.LayerGroup();
 
 
-// 2. Add a reference to the tectonic plates group to the overlays object.
+// 2. Add a reference to the tectonic plates group and major earthquake group to the overlays object.
 let overlays = {
   "Earthquakes": allEarthquakes,
   "Tectonic Plates": tectonicPlates,
@@ -118,6 +119,8 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
   // Then we add the earthquake layer to our map.
   allEarthquakes.addTo(map);
+
+// Deliverable 2: 
 // 3. Retrieve the major earthquake GeoJSON data >4.5 mag for the week.
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson").then(function(data) {
 
@@ -220,7 +223,7 @@ legend.onAdd = function() {
   // Finally, we our legend to the map.
   legend.addTo(map);
 
-
+  //Deliverable 1:
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
 
   // Accessing the techtonic plates GeoJSON URL.
